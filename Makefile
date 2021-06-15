@@ -6,27 +6,27 @@
 #    By: dclark <dclark@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/26 12:16:27 by dclark            #+#    #+#              #
-#    Updated: 2021/06/15 13:32:25 by dclark           ###   ########.fr        #
+#    Updated: 2021/06/15 13:34:01 by dclark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS_C		=	client.c
+SRCS_C		= client.c
 
-SRCS_C_B	=	client_bonus.c
+SRCS_C_B	= client_bonus.c
 
-SRCS_S		=	server.c
+SRCS_S		= server.c
 
-SRCS_S_B	=	server_bonus.c
+SRCS_S_B	= server_bonus.c
 
-HEADER		=	./
+HEADER		= ./
 
-NAME_S		=	server
+NAME_S		= server
 
-NAME_C		=	client
+NAME_C		= client
 
-NAME_S_B	=	server_bonus
+NAME_S_B	= server_bonus
 
-NAME_C_B	=	client_bonus
+NAME_C_B	= client_bonus
 
 OBJS_C		= $(SRCS_C:.c=.o)
 
@@ -36,9 +36,9 @@ OBJS_C_B	= $(SRCS_C_B:.c=.o)
 
 OBJS_S_B	= $(SRCS_S_B:.c=.o)
 
-CFLAGS		+=	-Wall -Werror -Wextra -I $(HEADER)
+CFLAGS		+= -Wall -Werror -Wextra -I $(HEADER)
 
-CC			=	gcc
+CC			= gcc
 
 all:	$(NAME_C) $(NAME_S)
 
